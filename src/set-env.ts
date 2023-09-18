@@ -9,7 +9,7 @@ require('dotenv').load();
 const envConfigFile = `export const environment = {
   production: '${process.env['PRODUCTION']}',
   mail_url: '${process.env['MAIL_URL']}',
-  domain: "https://hbc666.club",
+  domain: "https://helloworld-d8d88.appspot.com/",
   firebase: {
     apiKey: '${process.env['API_KEY']}',
     authDomain: '${process.env['AUTH_DOMAIN']}',

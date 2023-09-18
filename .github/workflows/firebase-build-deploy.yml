@@ -65,7 +65,7 @@ jobs:
   prod_build_deploy:
       runs-on: ubuntu-latest
       environment: prod
-      needs: [uat_build_deploy] # This job depends on the previous job.
+      # needs: [uat_build_deploy] # This job depends on the previous job.
       steps:
         # Checkout the source code from the repository.
         - uses: actions/checkout@v2

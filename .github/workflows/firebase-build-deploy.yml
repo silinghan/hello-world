@@ -28,7 +28,7 @@ jobs:
             node-version: '16.14.0'
 
         # Install project dependencies.
-        - run: npm install
+        # - run: npm install
 
         # Install the Angular CLI globally.
         - run: npm install -g @angular/cli
@@ -48,7 +48,7 @@ jobs:
             echo MEASUREMENT_ID=${{ secrets.MEASUREMENT_ID }} >> .env
 
         # Run a custom script (npm run config, assumed to be in package.json) if needed.
-        - run: npm run config
+        # - run: npm run config
 
         # Build the Angular application for production.
         - run: ng build --prod --progress --output-path=public

@@ -16,7 +16,7 @@ jobs:
   # Production environment build and deploy job.
   prod_build_deploy:
       runs-on: ubuntu-latest
-      environment: prod
+      environment: PRODUCTION
       # needs: [uat_build_deploy] # This job depends on the previous job.
       steps:
         # Checkout the source code from the repository.
